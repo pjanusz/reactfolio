@@ -2,14 +2,13 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import './App.css';
 import Start from './components/start';
+import About from './components/about';
 
 class App extends Component {
 
   constructor(props) {
     super(props);
-    this.state = {
-      data: {}
-    }
+    this.state = {}
   }
 
   getData() {
@@ -18,7 +17,8 @@ class App extends Component {
       dataType: 'json',
       cache: false,
       success: file => {
-        this.setState({data: file});
+        this.setState(file);
+        console.log(file);
       },
       error: (xhr, status, error) => {
         console.log(error);
@@ -34,7 +34,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Start data={this.state.data.test}></Start>
+        <Start start={this.state.start}></Start>
+        <About about={this.state.about}></About>
       </div>
     );
   }

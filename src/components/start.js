@@ -3,7 +3,7 @@ import logo from '../logo.svg';
 
 class Start extends Component {
     render() {
-        const test = this.props.data;
+        const start = this.props.start;
         return (
             <header className="App-header">
                 <img src={logo} className="App-logo" alt="logo" />
@@ -14,7 +14,7 @@ class Start extends Component {
                 target="_blank"
                 rel="noopener noreferrer"
             >
-            Pff {test}
+            Pff {start}
             </a>
             </header>
         )
