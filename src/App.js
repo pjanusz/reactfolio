@@ -18,7 +18,6 @@ class App extends Component {
       cache: false,
       success: file => {
         this.setState(file);
-        console.log(file);
       },
       error: (xhr, status, error) => {
         console.log(error);
