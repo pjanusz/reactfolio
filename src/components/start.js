@@ -1,53 +1,23 @@
 import React, {Component} from 'react';
-import {Nav} from 'react-bootstrap';
-import {Link, animateScroll as scroll} from 'react-scroll';
+import {Jumbotron} from 'react-bootstrap';
 
 class Start extends Component {
     render() {
 
-        const start = this.props.start;
-        
-        return (
-            <header id="start" className="section">
-                <Nav className="nav">
-                    <Nav.Item>
-                        <Link
-                            to="start"
-                            activeClass="active"
-                            spy={true}
-                            smooth={true}>
-                            {start}
-                        </Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Link
-                            to="about"
-                            activeClass="active"
-                            spy={true}
-                            smooth={true}>
-                            O mnie
-                        </Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Link
-                            to="projects"
-                            activeClass="active"
-                            spy={true}
-                            smooth={true}>
-                            Projekty
-                        </Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Link
-                            to="contact"
-                            activeClass="active"
-                            spy={true}
-                            smooth={true}>
-                            Kontakt
-                        </Link>
-                    </Nav.Item>
-                </Nav>
-            </header>
+        if (this.props.start) {
+            var me = this.props.start.me;
+            var description = this.props.start.description;
+            var sectionName = this.props.start.sectionName;
+        }
+
+        return (    
+            <section className="start-section section" id={sectionName}>
+                <Jumbotron className="start-main col-10 my-auto">
+                    <h1 className="text-center">{me}</h1>
+                    <p className="text-center">{description}</p>
+                    <div className="row"></div>
+                </Jumbotron>
+            </section>
         )
     }
 }
