@@ -8,8 +8,8 @@ class Start extends Component {
         const start = this.props.start;
         
         return (
-            <header id="start" className="App-header">
-                <Nav>
+            <header id="start" className="display-height">
+                <Nav className="nav">
                     <Nav.Item>
                         <Link
                             to="start"
@@ -25,9 +25,27 @@ class Start extends Component {
                             activeClass="active"
                             spy={true}
                             smooth={true}>
-                            About
+                            O mnie
                         </Link>
-                    </Nav.Item>    
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Link
+                            to="projects"
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}>
+                            Projekty
+                        </Link>
+                    </Nav.Item>
+                    <Nav.Item>
+                        <Link
+                            to="contact"
+                            activeClass="active"
+                            spy={true}
+                            smooth={true}>
+                            Kontakt
+                        </Link>
+                    </Nav.Item>
                 </Nav>
             </header>
         )

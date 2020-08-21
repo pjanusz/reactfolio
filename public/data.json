@@ -1,4 +1,6 @@
 {
-    "start": "start",
-    "about": "about"
+    "start": "Start",
+    "about": "O mnie",
+    "projects": "Projekty",
+    "contact": "Kontact"
 }

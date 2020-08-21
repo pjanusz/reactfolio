@@ -3,6 +3,8 @@ import $ from 'jquery';
 import './App.css';
 import Start from './components/start';
 import About from './components/about';
+import Projects from './components/projects';
+import Contact from './components/contact';
 
 class App extends Component {
 
@@ -35,6 +37,8 @@ class App extends Component {
       <div className="App">
         <Start start={this.state.start}></Start>
         <About about={this.state.about}></About>
+        <Projects projects={this.state.projects}></Projects>
+        <Contact contact={this.state.contact}></Contact>
       </div>
     );
   }

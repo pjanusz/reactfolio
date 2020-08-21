@@ -1,11 +1,10 @@
 import React, {Component} from 'react';
-import logo from '../logo.svg';
 
-class About extends Component {
+class Projects extends Component {
     render() {
-        const about = this.props.about;
+        const projects = this.props.projects;
         return (
-            <section id="about" className="display-height">
+            <section id="projects" className="display-height">
                 <p>Edit <code>src/App.js</code> and save to reload.</p>
                 <a
                     className="App-link"
@@ -13,11 +12,11 @@ class About extends Component {
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                Pff {about}
+                Pff {projects}
                 </a>
             </section>
         )
     }
 }
 
-export default About;
+export default Projects;
