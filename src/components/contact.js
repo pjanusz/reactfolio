@@ -4,7 +4,7 @@ class Contact extends Component {
     render() {
         const contact = this.props.contact;
         return (
-            <section id="contact" className="display-height">
+            <section id="contact" className="section">
                 <p>Edit <code>src/App.js</code> and save to reload.</p>
                 <a
                     className="App-link"

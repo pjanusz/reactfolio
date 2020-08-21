@@ -5,7 +5,7 @@ class About extends Component {
     render() {
         const about = this.props.about;
         return (
-            <section id="about" className="display-height">
+            <section id="about" className="section">
                 <p>Edit <code>src/App.js</code> and save to reload.</p>
                 <a
                     className="App-link"

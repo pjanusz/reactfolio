@@ -8,7 +8,7 @@ class Start extends Component {
         const start = this.props.start;
         
         return (
-            <header id="start" className="display-height">
+            <header id="start" className="section">
                 <Nav className="nav">
                     <Nav.Item>
                         <Link
