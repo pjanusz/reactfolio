@@ -1,13 +1,47 @@
+html, body {
+  color: white;
+}
+
 .navi {
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0);
+  position: fixed;
   display: flex;
-  width: 100%;
+  left: 0;
+  right: 0;
   height: 50px;
   line-height: 50px;
   justify-content: space-evenly;
-  position: fixed;
+}
+
+.nav-items-container {
+  box-sizing: border-box;
+  justify-content: space-evenly;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.navi::after,
+.navi::before {
+  position: absolute;
   top: 0;
-  z-index: 1000;
+  bottom: 0;
+}
+
+.navi::before {
+  content: '';
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 50px solid green;
+  border-left: 50px solid transparent;
+}
+
+.navi::after {
+  content: '';
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 50px solid red;
+  border-right: 50px solid transparent;
 }
 
 .active-top {
@@ -16,7 +50,6 @@
 
 .section {
   position: initial;
-  z-index: 1;
   background-color: #282c34;
   padding-top: 50px;
   min-height: 100vh;

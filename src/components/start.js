@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Jumbotron} from 'react-bootstrap';
+import {Jumbotron, Container} from 'react-bootstrap';
 
 class Start extends Component {
     render() {
@@ -12,11 +12,13 @@ class Start extends Component {
 
         return (    
             <section className="start-section section" id={sectionName}>
-                <Jumbotron className="start-main col-10 my-auto">
-                    <h1 className="text-center">{me}</h1>
-                    <p className="text-center">{description}</p>
-                    <div className="row"></div>
-                </Jumbotron>
+                <Container className="my-auto">
+                    <Jumbotron className="start-main">
+                        <h1 className="text-center">{me}</h1>
+                        <p className="text-center">{description}</p>
+                        <div className="row"></div>
+                    </Jumbotron>
+                </Container>
             </section>
         )
     }

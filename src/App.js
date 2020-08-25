@@ -35,12 +35,14 @@ class App extends Component {
       console.log(window.pageYOffset);
       var min = 1;
       var max = 600;
+      var step = 0.0015;
+      var opacity = window.pageYOffset*step;
       if (window.pageYOffset === 0) {
-        $('.navi').css('backgroundColor', 'rgba(0, 0, 0, 0.30)');
+        $('.nav-items-container').css('backgroundColor', 'rgba(0, 0, 0, 0)');
       } else if (window.pageYOffset >= min && window.pageYOffset < max) {
-        $('.navi').css('backgroundColor', `rgba(0, 0, 0, ${0.3 + window.pageYOffset*0.0015})`);
+        $('.nav-items-container').css('backgroundColor', `rgba(0, 0, 0, ${opacity})`);
       } else {
-        $('.navi').css('backgroundColor', 'rgba(0, 0, 0, 1)');
+        $('.nav-items-container').css('backgroundColor', 'rgba(0, 0, 0, 1)');
       }
     }
   }
