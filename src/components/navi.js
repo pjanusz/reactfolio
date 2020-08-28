@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Nav, Container} from 'react-bootstrap';
+import {Nav} from 'react-bootstrap';
 import {Link} from 'react-scroll';
 
 class Navi extends Component {
@@ -13,45 +13,44 @@ class Navi extends Component {
         }
 
         return (
-            <Nav className="navi container">
-                <Container className="d-flex nav-items-container">
-                    <Nav.Item>
-                        <Link
-                            to="start"
-                            activeClass="active"
-                            spy={true}
-                            smooth={true}>
-                            {start}
-                        </Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Link
-                            to="about"
-                            activeClass="active"
-                            spy={true}
-                            smooth={true}>
-                            {about}
-                        </Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Link
-                            to="projects"
-                            activeClass="active"
-                            spy={true}
-                            smooth={true}>
-                            {projects}
-                        </Link>
-                    </Nav.Item>
-                    <Nav.Item>
-                        <Link
-                            to="contact"
-                            activeClass="active"
-                            spy={true}
-                            smooth={true}>
-                            {contact}
-                        </Link>
-                    </Nav.Item>
-                </Container>
+            <Nav className="navi p-0 mx-auto col-10 col-md-6 col-xl-5">
+                <div className="navi-background"></div>
+                <Nav.Item className="nav-item">
+                <Link
+                    to="start"
+                    activeClass="active"
+                    spy={true}
+                    smooth={true}>
+                    {start}
+                </Link>
+                </Nav.Item>
+                <Nav.Item className="nav-item">
+                    <Link
+                        to="about"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}>
+                        {about}
+                    </Link>
+                </Nav.Item>
+                <Nav.Item className="nav-item">
+                    <Link
+                        to="projects"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}>
+                        {projects}
+                    </Link>
+                </Nav.Item>
+                <Nav.Item className="nav-item">
+                    <Link
+                        to="contact"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}>
+                        {contact}
+                    </Link>
+                </Nav.Item>
             </Nav>
         )
     }

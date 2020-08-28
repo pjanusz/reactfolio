@@ -1,19 +1,16 @@
 import React, {Component} from 'react';
+import {Jumbotron, Container} from 'react-bootstrap';
 
 class Projects extends Component {
     render() {
         const projects = this.props.projects;
         return (
             <section id="projects" className="section">
-                <p>Edit <code>src/App.js</code> and save to reload.</p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                Pff {projects}
-                </a>
+                <Container className="my-auto p-0 mx-auto col-10 col-md-6 col-xl-5">
+                    <Jumbotron>
+                        {projects}
+                    </Jumbotron>
+                </Container>
             </section>
         )
     }

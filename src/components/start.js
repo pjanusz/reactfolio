@@ -11,8 +11,8 @@ class Start extends Component {
         }
 
         return (    
-            <section className="start-section section" id={sectionName}>
-                <Container className="my-auto">
+            <section className="start-section section " id={sectionName}>
+                <Container className="my-auto p-0 mx-auto col-10 col-md-6 col-xl-5">
                     <Jumbotron className="start-main">
                         <h1 className="text-center">{me}</h1>
                         <p className="text-center">{description}</p>

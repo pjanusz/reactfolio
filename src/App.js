@@ -38,11 +38,11 @@ class App extends Component {
       var step = 0.0015;
       var opacity = window.pageYOffset*step;
       if (window.pageYOffset === 0) {
-        $('.nav-items-container').css('backgroundColor', 'rgba(0, 0, 0, 0)');
+        $('.navi-background').css('borderTop', '50px solid rgba(0, 0, 0, 0)');
       } else if (window.pageYOffset >= min && window.pageYOffset < max) {
-        $('.nav-items-container').css('backgroundColor', `rgba(0, 0, 0, ${opacity})`);
+        $('.navi-background').css('borderTop', `50px solid rgba(0, 0, 0, ${opacity})`);
       } else {
-        $('.nav-items-container').css('backgroundColor', 'rgba(0, 0, 0, 1)');
+        $('.navi-background').css('borderTop', '50px solid rgba(0, 0, 0, 1)');
       }
     }
   }

@@ -13,39 +13,18 @@ html, body {
   justify-content: space-evenly;
 }
 
-.nav-items-container {
-  box-sizing: border-box;
-  justify-content: space-evenly;
-  background-color: rgba(0, 0, 0, 0);
-}
-
-.navi::after,
-.navi::before {
+.navi-background {
   position: absolute;
-  top: 0;
-  bottom: 0;
-}
-
-.navi::before {
-  content: '';
-  left: 0;
-  width: 0;
   height: 0;
-  border-top: 50px solid green;
+  width: 100%;
+  border-top: 50px solid rgba(0, 0, 0, 0);
+  border-right: 50px solid transparent;
   border-left: 50px solid transparent;
 }
 
-.navi::after {
-  content: '';
-  right: 0;
-  width: 0;
-  height: 0;
-  border-top: 50px solid red;
-  border-right: 50px solid transparent;
-}
-
-.active-top {
-  background-color: aqua;
+.nav-item {
+  position: relative;
+  z-index: 1000;
 }
 
 .section {
@@ -67,6 +46,7 @@ html, body {
 }
 
 .start-main {
+  box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
