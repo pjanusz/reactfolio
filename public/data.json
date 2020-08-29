@@ -1,15 +1,37 @@
 {
     "navi": {
-        "start": "Start",
-        "about": "O mnie",
-        "projects": "Projekty",
-        "contact": "Kontakt"
+        "start": "START",
+        "about": "O MNIE",
+        "projects": "PROJEKTY",
+        "contact": "KONTAKT"
     },
     "start": {
         "sectionName": "start",
         "me": "Piotr Janusz",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean egestas leo lectus, et vestibulum dolor ultricies id. Maecenas eu arcu felis. Nunc in congue mauris, non aliquam urna.",
-        "backgroundImage": ""
+        "bgImage": "code-dark.jpg",
+        "social": [
+            {
+                "name": "fb",
+                "url": "http://facebook.com",
+                "icon": "icon"
+            },
+            {
+                "name": "tt",
+                "url": "http://twitter.com",
+                "icon": "icon"
+            },
+            {
+                "name": "gh",
+                "url": "http://github.com",
+                "icon": "icon"
+            },
+            {
+                "name": "in",
+                "url": "http://linkedin.com",
+                "icon": "icon"
+            }
+        ]
     },
     "about": "O mnie",
     "projects": "Projekty",

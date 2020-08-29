@@ -6,7 +6,7 @@ class About extends Component {
         const about = this.props.about;
         return (
             <section id="about" className="section">
-                <Container className="my-auto p-0 mx-auto col-10 col-md-6 col-xl-5">
+                <Container className="my-auto p-0 mx-auto col-10 col-md-8 col-xl-6">
                     <Jumbotron>
                         {about}
                     </Jumbotron>

@@ -13,7 +13,7 @@ class Navi extends Component {
         }
 
         return (
-            <Nav className="navi p-0 mx-auto col-10 col-md-6 col-xl-5">
+            <Nav className="navi p-0 mx-auto col-10 col-md-8 col-xl-6">
                 <div className="navi-background"></div>
                 <Nav.Item className="nav-item">
                 <Link
