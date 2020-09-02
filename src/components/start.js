@@ -20,18 +20,18 @@ class Start extends Component {
         }
 
         return (    
-            <section className="start-section section" id={sectionName}>
+            <section className="start-section section" style={{backgroundImage: `url(${require('../../src/img/start.jpg')})`}} id={sectionName}>
                 <Container className="my-auto p-0 mx-auto col-10 col-md-8 col-xl-6">
-                    <Jumbotron className="start-main">
+                    <Jumbotron className="jumbo">
                         <h1 className="text-center">{me}</h1>
                         <p className="text-center">{description}</p>
-                        <div id="social" className="row justify-content-around mx-auto col-6">{social}</div>
+                        <div id="social" className="row justify-content-around mx-auto mt-5 col-6">{social}</div>
                     </Jumbotron>
                 </Container>
                 <Link
                     to="about"
                     style={{width: `50px`, height: `50px`, lineHeight: `35px`}}
-                    className="btn rounded-circle btn-outline-light mb-5 text-center"
+                    className="btn rounded-circle btn-light mb-5 text-center"
                     activeClass=""
                     spy={true}
                     smooth={true}>

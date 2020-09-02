@@ -5,9 +5,9 @@ class Projects extends Component {
     render() {
         const projects = this.props.projects;
         return (
-            <section id="projects" className="section">
+            <section id="projects" className="section" style={{backgroundImage: `url(${require('../../src/img/projects.jpg')})`}}>
                 <Container className="my-auto p-0 mx-auto col-10 col-md-8 col-xl-6">
-                    <Jumbotron>
+                    <Jumbotron className="jumbo">
                         {projects}
                     </Jumbotron>
                 </Container>

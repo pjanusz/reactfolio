@@ -5,9 +5,9 @@ class About extends Component {
     render() {
         const about = this.props.about;
         return (
-            <section id="about" className="section">
+            <section id="about" className="section" style={{backgroundImage: `url(${require('../../src/img/about.jpg')})`}}>
                 <Container className="my-auto p-0 mx-auto col-10 col-md-8 col-xl-6">
-                    <Jumbotron>
+                    <Jumbotron className="jumbo">
                         {about}
                     </Jumbotron>
                 </Container>

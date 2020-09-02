@@ -2,6 +2,10 @@ html, body {
   color: white;
 }
 
+a {
+  cursor: pointer;
+}
+
 .navi {
   background-color: rgba(0, 0, 0, 0);
   position: fixed;
@@ -29,7 +33,7 @@ html, body {
 
 .section {
   position: initial;
-  background-color: #282c34;
+  background-size: cover;
   padding-top: 50px;
   min-height: 100vh;
   display: flex;
@@ -39,14 +43,8 @@ html, body {
   color: white;
 }
 
-.start-section {
-  background-image: url(../src/img/code-dark.jpg);
-  background-size: cover;
-  background-position-x: 20%;
-}
-
-.start-main {
-  box-sizing: border-box;
+.jumbo {
+    box-sizing: border-box;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
