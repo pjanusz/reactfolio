@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 import './App.css';
+import {library} from '@fortawesome/fontawesome-svg-core';
+import {fab} from '@fortawesome/free-brands-svg-icons';
 import Navi from './components/navi';
 import Start from './components/start';
 import About from './components/about';
 import Projects from './components/projects';
 import Contact from './components/contact';
+
+library.add(fab);
 
 class App extends Component {
 

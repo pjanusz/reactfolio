@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Jumbotron, Container} from 'react-bootstrap';
 import {Link} from 'react-scroll';
+import {FontAwesomeIcon as Icon} from '@fortawesome/react-fontawesome';
 
 class Start extends Component {
     render() {
@@ -10,7 +11,11 @@ class Start extends Component {
             var description = this.props.start.description;
             var sectionName = this.props.start.sectionName;
             var social = this.props.start.social.map(n => {
-                return <div key={n.name}><a href={n.url} target="_blank" rel="noopener noreferrer">{n.name}</a></div>
+                return <div key={n.name}>
+                            <a href={n.url} target="_blank" className="text-light" rel="noopener noreferrer">
+                                <Icon icon={['fab', `${n.icon}`]} />
+                            </a>
+                        </div>
             });
         }
 
@@ -20,7 +25,7 @@ class Start extends Component {
                     <Jumbotron className="start-main">
                         <h1 className="text-center">{me}</h1>
                         <p className="text-center">{description}</p>
-                        <div id="social" className="row justify-content-around mx-auto col-4">{social}</div>
+                        <div id="social" className="row justify-content-around mx-auto col-6">{social}</div>
                     </Jumbotron>
                 </Container>
                 <Link

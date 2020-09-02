@@ -14,22 +14,22 @@
             {
                 "name": "fb",
                 "url": "http://facebook.com",
-                "icon": "icon"
+                "icon": "facebook"
             },
             {
                 "name": "tt",
                 "url": "http://twitter.com",
-                "icon": "icon"
+                "icon": "twitter"
             },
             {
                 "name": "gh",
                 "url": "http://github.com",
-                "icon": "icon"
+                "icon": "github"
             },
             {
                 "name": "in",
                 "url": "http://linkedin.com",
-                "icon": "icon"
+                "icon": "linkedin"
             }
         ]
     },
